@@ -8,8 +8,12 @@ class Program
         
     Start:
         Console.WriteLine("""               
-        {enter your choice from 1/2/3
-        1 - small 2 - medium 3 - large}                 
+        {
+        welcome to our coffee shop
+        enter your coffee size from 1/2/3
+        1 - small 
+        2 - medium 
+        3 - large}                 
         """);
         int choice = int.Parse(Console.ReadLine()!);
         int price_of_coffee = 0;
@@ -19,20 +23,20 @@ class Program
             case 1:
                 Console.WriteLine("your picked small");
                 price_of_coffee += 100;
-                Console.WriteLine($" price of the coffee is= {price_of_coffee}");
+                Console.WriteLine($"your price of the coffee is= {price_of_coffee}");
                 break;
             case 2:
                 Console.WriteLine("your picked medium");
                 price_of_coffee += 200;
-                Console.WriteLine($" price of the coffee is= {price_of_coffee}");
+                Console.WriteLine($"your price of the coffee is= {price_of_coffee}");
                 break;
             case 3:
                 Console.WriteLine("your picked large");
                 price_of_coffee += 300;
-                Console.WriteLine($" price of the coffee is= {price_of_coffee}");
+                Console.WriteLine($"your price of the coffee is= {price_of_coffee}");
                 break;
             default:
-                Console.WriteLine("enter valid choice");
+                Console.WriteLine("please enter valid choice");
                 break;
         }
         totalCountOfCoffee += 1;
